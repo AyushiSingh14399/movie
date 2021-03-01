@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#header{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+.navbar{
+  padding: 50px 0;
+}
+ .navbar-brand{
+   font-weight: 600;
+   font-size: 1.5rem;
+ }
+ .navbar-dark .navbar-brand{
+   color: #dcdde1;
+ }
+ .nav-item{
+   font-weight: 600;
+   text-transform: uppercase;
+   padding-left: 10px;
+ }
+ .navbar-dark .navbar-nav .nav-item .nav-link:hover{
+   background: #dcdde1;
+   color: #262626;
+ }
+ .main{
+   position: relative;
+   background: linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ),url('/src/image/img2.jpg');
+   min-height: 100vh;
+   background-size: cover;
+   background-position: center;
+   padding: 220px 0 200px;
+ }
+ .main h2{
+   margin: 0;
+   padding: 0;
+   font-size: 2.6em;
+   color: #dcdde1;
+   text-transform: uppercase;
+   font-weight: bold;
+
+  }
+  .main p{
+    margin-top: 1em;
+    padding: 0;
+    font-size: 1em;
+    color: #dcdde1;
+  }
+
+.ratingContainer{
+  width: 187px;
+    height: 187px;
+  overflow: hidden;
+}
+.flexRow{
+  display: flex;
+  margin-top: 115px;
+  margin-right: 50px;
+  margin-left: 30px;
+
+}
+.shows{
+margin-top: 100px;
+}
+.shows h3{
+  color: #dcdde1;
+  text-decoration: underline;
+}
+.review h3{
+  color: #dcdde1;
+  text-decoration: underline;
+}
+.shows .cardtop{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.review .cardtop{
+  margin-top: 50px;
+ 
+}
+.shows .card{
+  box-shadow: 10px 10px rgb(54, 47, 153);
+
+}
+.card .card-body{
+  background-color: rgb(14, 20, 78);
+}
+.shows .card .card-body .card-link{
+  cursor: pointer;
+}/*
+.shows .card .card-body .card-title{
+  background-color: yellow;
+}*/
+.card .card-body .card-text{
+  color: white;
+  font-weight: 600;
+  font-style: bold;
+}
+.card .card-body .card-title{
+  color: white;
+}
+
+.review .card .card-body .card-subtitle{
+  color: yellow;
+}
+.review .card{
+  border-color: yellow;
+  border-radius: 20px;
+  box-shadow: 10px 10px teal;
+}
+.review .card .card-body{
+  border-color: yellow;
+  border-radius: 20px;
+}
+span{
+  background-color: yellow;
+  color: black;
+}
+.row{
+  justify-content: space-evenly;
+}
+  @media(max-width:769px){
+    .main{
+      padding: 200px 0;
+    }
+    .main h2{
+      font-size:  2em;
+    }
+    .wrap{
+      flex-wrap: wrap;
+    }
+    .ratingContainer{
+      overflow: hidden;
+      height: 194px;
+    }
+  }
